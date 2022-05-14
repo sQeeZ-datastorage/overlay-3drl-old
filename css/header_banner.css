@@ -1,0 +1,46 @@
+.header_banner {
+    padding: 0;
+    margin: 0;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.header_banner>.blue,
+.header_banner>.orange {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vh;
+    height: 5vh;
+    width: 50vw;
+}
+
+.header_banner>.blue {
+    left: 0;
+}
+
+.header_banner>.orange {
+    right: 0;
+}
+
+.header_banner>.blue>.name,
+.header_banner>.orange>.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5vh;
+    width: 15vw;
+    color: white;
+    text-align: center;
+    font-size: 2vw;    
+    font-weight: bold;
+}
+
+.header_banner>.blue>.name {
+    margin-left: 15vw;
+}
+
+.header_banner>.orange>.name {
+    margin-right: 15vw;
+}
