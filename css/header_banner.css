@@ -1,4 +1,4 @@
-.header_banner {
+.scorebug {
     padding: 0;
     margin: 0;
     padding-top: 1vh;
@@ -6,8 +6,7 @@
     justify-content: center;
 }
 
-.header_banner>.blue,
-.header_banner>.orange {
+.team {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -16,16 +15,15 @@
     width: 50vw;
 }
 
-.header_banner>.blue {
+.left {
     left: 0;
 }
 
-.header_banner>.orange {
+.right {
     right: 0;
 }
 
-.header_banner>.blue>.name,
-.header_banner>.orange>.name {
+.name {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,14 +31,14 @@
     width: 15vw;
     color: white;
     text-align: center;
-    font-size: 2vw;    
+    font-size: 2vw;
     font-weight: bold;
 }
 
-.header_banner>.blue>.name {
+.left>.name {
     margin-left: 15vw;
 }
 
-.header_banner>.orange>.name {
+.right>.name {
     margin-right: 15vw;
 }
