@@ -1,4 +1,9 @@
-@import "./header_banner.css";
+/* import styles for the components */
+
+@import "./scorebug.css";
+@import "./boost.css";
+
+/* general styles */
 
 body {
     position: fixed;

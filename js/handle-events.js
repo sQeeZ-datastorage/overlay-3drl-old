@@ -275,6 +275,7 @@ const DisplayManager = {
             return;
         }
 
+        //show boost overlay
         if (!showBoost) {
             showBoost = true;
             $targetDisplay.show();
