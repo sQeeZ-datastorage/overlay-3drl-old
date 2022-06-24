@@ -1,6 +1,7 @@
 /* import styles for the components */
 
 @import "./scorebug.css";
+@import "./playerbug.css";
 @import "./boost.css";
 
 /* general styles */
