@@ -82,49 +82,90 @@
     font-weight: bold;
 }
 
-.name {
+.team-info-left .name {
     width: 12.5rem;
     text-align: left;
     padding-left: 1rem;
 }
 
-.goals {
+.team-info-left .goals {
     width: 2.2rem;
     text-align: center;
     padding-left: 2.3rem;
 }
 
-.assists {
+.team-info-left .assists {
     width: 2.1rem;
     text-align: center;
     padding-left: 2rem;
 }
 
-.saves {
+.team-info-left .saves {
     width: 1.9rem;
     text-align: center;
     padding-left: 1.5rem;
 }
 
-.shots {
+.team-info-left .shots {
     width: 1.9rem;
     text-align: center;
     padding-left: 2rem;
 }
 
-.boostValue {
+.team-info-left .boostValue {
     width: 3.55rem;
     text-align: center;
     padding-left: 0.5rem;
 }
 
-.boostBar {
-    width: 25.2rem;
-    padding-left: 0.15rem;
+.team-info-left .boostBar {
+    width: 25.15rem;
+    padding-left: 0.2rem;
+}
+
+.team-info-right .name {
+    width: 12.25rem;
+    text-align: left;
+    padding-left: 1.25rem;
+}
+
+.team-info-right .goals {
+    width: 2.2rem;
+    text-align: center;
+    padding-left: 2.2rem;
+}
+
+.team-info-right .assists {
+    width: 2.2rem;
+    text-align: center;
+    padding-left: 1.9rem;
+}
+
+.team-info-right .saves {
+    width: 1.9rem;
+    text-align: center;
+    padding-left: 1.5rem;
+}
+
+.team-info-right .shots {
+    width: 1.85rem;
+    text-align: center;
+    padding-left: 1.9rem;
+}
+
+.team-info-right .boostValue {
+    width: 3.55rem;
+    text-align: center;
+    padding-left: 0.7rem;
+}
+
+.team-info-right .boostBar {
+    width: 24.8rem;
+    padding-left: 0.1rem
 }
 
 .container {
-    height: 100%;
+    height: 97.5%;
     width: 100%;
     text-align: center;
 }
@@ -134,8 +175,17 @@
     width: 100%;
 }
 
-.progress-bar {
+.team-info-left .progress-bar {
     margin-top: 5%;
+    height: 90%;
+    width: 100%;
+    background-color: #ee303c;
+    transition: 0.1s linear;
+    transition-property: background-color;
+    vertical-align: middle;
+}
+
+.team-info-right .progress-bar {
     height: 90%;
     width: 100%;
     background-color: #ee303c;
