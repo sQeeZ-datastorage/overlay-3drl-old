@@ -11,17 +11,18 @@
 .team {
     position: absolute;
     display: flex;
-    justify-content: center;
-    margin-top: 1.5vh;
+    margin-top: 1.25vh;
     height: 5vh;
     width: 50vw;
 }
 
 .left {
+    justify-content: right;
     left: 0;
 }
 
 .right {
+    justify-content: left;
     right: 0;
 }
 
@@ -30,17 +31,17 @@
     flex-direction: column;
     justify-content: center;
     height: 5vh;
-    width: 15vw;
+    width: 16.5vw;
     color: white;
     text-align: center;
     font-size: 2vw;
     font-weight: bold;
 }
 
-.left>.name {
-    margin-left: 15vw;
+.left>.teamname {
+    padding-right: 11.25rem;
 }
 
-.right>.name {
-    margin-right: 15vw;
+.right>.teamname {
+    padding-left: 11.25rem;
 }
