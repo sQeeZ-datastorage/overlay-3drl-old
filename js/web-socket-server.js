@@ -253,8 +253,8 @@ const DisplayManager = {
         var firstTeam = teams[0];
         var secondTeam = teams[1];
 
-        $(teamLeft + " .name").text(firstTeam["name"]);
-        $(teamRight + " .name").text(secondTeam["name"]);
+        $(teamLeft + " .teamname").text(firstTeam["name"]);
+        $(teamRight + " .teamname").text(secondTeam["name"]);
     },
     //setup director
     updateTargetInfo: function(targetPlayer) {
