@@ -1,23 +1,60 @@
 /* styles for the player information */
 
 .playerbug {
-    width: 96vw;
+    width: 99.5vw;
     height: 50rem;
     display: flex;
     justify-content: space-between;
     padding-top: 10vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 0.25vw;
+    padding-right: 0.25vw;
+}
+
+.player-row>td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.25rem !important;
+    color: white;
+    font-weight: bold;
+}
+
+.player-boost>td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.25rem !important;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    height: 97.5%;
+    width: 100%;
+    text-align: center;
+}
+
+.progress {
+    height: 100%;
+    width: 100%;
+}
+
+.progress-striped .progress-bar {
+    background-color: #FCBC51;
+    background-image: linear-gradient( 45deg, rgb(252, 163, 17) 25%, transparent 25%, transparent 50%, rgb(252, 163, 17) 50%, rgb(252, 163, 17) 75%, transparent 75%, transparent);
+    animation: progressAnimationStrike 0.1s;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.65%;
+    height: 90%;
+    width: 100%;
 }
 
 .team-info-left,
 .team-info-right {
     width: 40rem;
-}
-
-.team-info-right {
-    padding-left: 10rem;
-    justify-content: right;
 }
 
 .team-info-left .player-row {
@@ -32,28 +69,6 @@
     font-size: 1.25rem !important;
 }
 
-.team-info-right .player-row {
-    background-image: url(../assets/orange_team_banner_top.png);
-    background-repeat: no-repeat;
-    background-size: 30rem;
-    background-position: bottom left;
-    vertical-align: bottom;
-    height: 3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 2;
-    font-size: 1.25rem !important;
-}
-
-.player-row>td {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    font-size: 1.25rem !important;
-    color: white;
-    font-weight: bold;
-}
-
 .team-info-left .player-boost {
     background-image: url(../assets/blue_team_banner_bottom.png);
     background-repeat: no-repeat;
@@ -61,25 +76,6 @@
     background-position: top left;
     height: 2.5rem;
     padding-bottom: 0.5rem;
-}
-
-.team-info-right .player-boost {
-    background-image: url(../assets/orange_team_banner_bottom.png);
-    background-repeat: no-repeat;
-    background-size: 30rem;
-    background-position: top left;
-    height: 2.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.player-boost>td {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    font-size: 1.25rem !important;
-    color: white;
-    font-weight: bold;
 }
 
 .team-info-left .name {
@@ -123,6 +119,43 @@
     padding-left: 0.2rem;
 }
 
+.team-info-left .progress-bar {
+    margin-top: 5%;
+    height: 90%;
+    width: 100%;
+    background-color: #ee303c;
+    transition: 0.1s linear;
+    transition-property: background-color;
+    vertical-align: middle;
+}
+
+.team-info-right {
+    display: flex;
+    justify-content: right;
+}
+
+.team-info-right .player-row {
+    background-image: url(../assets/orange_team_banner_top.png);
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: bottom left;
+    vertical-align: bottom;
+    height: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2;
+    padding-right: 0.5vw;
+    font-size: 1.25rem !important;
+}
+
+.team-info-right .player-boost {
+    background-image: url(../assets/orange_team_banner_bottom.png);
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: top left;
+    height: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .team-info-right .name {
     width: 12.25rem;
     text-align: left;
@@ -164,27 +197,6 @@
     padding-left: 0.1rem
 }
 
-.container {
-    height: 97.5%;
-    width: 100%;
-    text-align: center;
-}
-
-.progress {
-    height: 100%;
-    width: 100%;
-}
-
-.team-info-left .progress-bar {
-    margin-top: 5%;
-    height: 90%;
-    width: 100%;
-    background-color: #ee303c;
-    transition: 0.1s linear;
-    transition-property: background-color;
-    vertical-align: middle;
-}
-
 .team-info-right .progress-bar {
     height: 90%;
     width: 100%;
@@ -192,17 +204,6 @@
     transition: 0.1s linear;
     transition-property: background-color;
     vertical-align: middle;
-}
-
-.progress-striped .progress-bar {
-    background-color: #FCBC51;
-    background-image: linear-gradient( 45deg, rgb(252, 163, 17) 25%, transparent 25%, transparent 50%, rgb(252, 163, 17) 50%, rgb(252, 163, 17) 75%, transparent 75%, transparent);
-    animation: progressAnimationStrike 0.1s;
-    margin: 0;
-    padding: 0;
-    margin-top: 0.65%;
-    height: 90%;
-    width: 100%;
 }
 
 @keyframes progressAnimationStrike {
