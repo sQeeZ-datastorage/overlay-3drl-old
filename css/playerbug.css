@@ -10,12 +10,30 @@
     padding-right: 2vw;
 }
 
-.team-info-left {
+.team-info-left,
+.team-info-right {
     width: 40rem;
 }
 
-.player-row {
+.team-info-right {
+    padding-left: 10rem;
+    justify-content: right;
+}
+
+.team-info-left .player-row {
     background-image: url(../assets/blue_team_banner_top.png);
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: bottom left;
+    vertical-align: bottom;
+    height: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2;
+    font-size: 1.25rem !important;
+}
+
+.team-info-right .player-row {
+    background-image: url(../assets/orange_team_banner_top.png);
     background-repeat: no-repeat;
     background-size: 30rem;
     background-position: bottom left;
@@ -36,8 +54,17 @@
     font-weight: bold;
 }
 
-.player-boost {
+.team-info-left .player-boost {
     background-image: url(../assets/blue_team_banner_bottom.png);
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: top left;
+    height: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.team-info-right .player-boost {
+    background-image: url(../assets/orange_team_banner_bottom.png);
     background-repeat: no-repeat;
     background-size: 30rem;
     background-position: top left;
