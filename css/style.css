@@ -14,3 +14,13 @@ body {
     padding: 0;
     background-image: url(../assets/dev/fly_cam_background.jpg);
 }
+
+tr {
+    vertical-align: middle;
+    display: flex;
+}
+
+td {
+    margin: 0;
+    padding: 0;
+}

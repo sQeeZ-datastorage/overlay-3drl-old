@@ -1,1 +1,138 @@
 /* styles for the player information */
+
+.playerbug {
+    width: 96vw;
+    height: 50rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.team-info-left {
+    width: 40rem;
+}
+
+.player-row {
+    background-image: url(../assets/blue_team_banner_top.png);
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: bottom left;
+    vertical-align: bottom;
+    height: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2;
+    font-size: 1.25rem !important;
+}
+
+.player-row>td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.25rem !important;
+    color: white;
+    font-weight: bold;
+}
+
+.player-boost {
+    background-image: url(../assets/blue_team_banner_bottom.png);
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: top left;
+    height: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.player-boost>td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.25rem !important;
+    color: white;
+    font-weight: bold;
+}
+
+.name {
+    width: 12.5rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.goals {
+    width: 2.2rem;
+    text-align: center;
+    padding-left: 2.3rem;
+}
+
+.assists {
+    width: 2.1rem;
+    text-align: center;
+    padding-left: 2rem;
+}
+
+.saves {
+    width: 1.9rem;
+    text-align: center;
+    padding-left: 1.5rem;
+}
+
+.shots {
+    width: 1.9rem;
+    text-align: center;
+    padding-left: 2rem;
+}
+
+.boostValue {
+    width: 3.55rem;
+    text-align: center;
+    padding-left: 0.5rem;
+}
+
+.boostBar {
+    width: 25.2rem;
+    padding-left: 0.15rem;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.progress {
+    height: 100%;
+    width: 100%;
+}
+
+.progress-bar {
+    margin-top: 5%;
+    height: 90%;
+    width: 100%;
+    background-color: #ee303c;
+    transition: 0.1s linear;
+    transition-property: background-color;
+    vertical-align: middle;
+}
+
+.progress-striped .progress-bar {
+    background-color: #FCBC51;
+    background-image: linear-gradient( 45deg, rgb(252, 163, 17) 25%, transparent 25%, transparent 50%, rgb(252, 163, 17) 50%, rgb(252, 163, 17) 75%, transparent 75%, transparent);
+    animation: progressAnimationStrike 0.1s;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.65%;
+    height: 90%;
+    width: 100%;
+}
+
+@keyframes progressAnimationStrike {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
