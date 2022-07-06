@@ -1,0 +1,23 @@
+/* styles for the serires information */
+
+.series {
+    top: 0;
+    width: calc(100vw - 0.2rem);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    padding-top: 5.4rem;
+    padding-right: 0.2rem;
+}
+
+.series>div {
+    position: absolute;
+}
+
+.blue-1 {
+    padding-right: 7rem;
+}
+
+.orange-1 {
+    padding-left: 6.25rem;
+}

@@ -1,5 +1,6 @@
 /* import styles for the components */
 
+@import "./series.css";
 @import "./scorebug.css";
 @import "./playerbug.css";
 @import "./boost.css";
@@ -12,6 +13,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    background: url('../assets/dev/director_background.jpg');
 }
 
 tr {
