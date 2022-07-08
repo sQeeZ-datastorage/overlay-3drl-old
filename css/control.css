@@ -1,5 +1,5 @@
 body {
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     background-color: #1C1C1C;
     color: white;
@@ -9,6 +9,9 @@ body {
 
 p {
     text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .series-control {
@@ -25,4 +28,12 @@ p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+.selected-blue {
+    background-color: blue;
+}
+
+.selected-orange {
+    background-color: orange;
 }
