@@ -11,6 +11,7 @@
     <li><a href="https://gitlab.com/bakkesplugins/sos/sos-plugin">SOS-Plugin</a></li>
     <li><a href="https://gitlab.com/bakkesplugins/sos/sos-ws-relay">Web-Socket-Server</a></li>
     <li><a href="https://github.com/marcelnoehre/Overlay-3DRL.git">Overlay Files</a></li>
+    <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 </ul>
 
 ## Download Overlay:
@@ -42,7 +43,17 @@ P.S. You can find a tutorial to install the SOS-Plugin and the Web-Socket-Server
 1) Open Command Propt (cmd) with running Web-Socket-Server 
 2) ctrl + c
 3) Type "node ws-relay"
-<p style="margin-bottom: 4rem">If you see the green "SUCESS: Connected to Rocket League on localhost:{port}" again, the server is restarted.</p>
+<p style="margin-bottom: 2rem">If you see the green "SUCESS: Connected to Rocket League on localhost:{port}" again, the server is restarted.</p>
+
+## Setup Visual Studio Code
+1) Add Extensions (ctrl + shift + x)
+2) Install Live Server
+<p style="margin-bottom: 2rem"></p>
+
+## Launch Overlay Software
+1) Open project in Visual Studio Code
+2) Run project as Live-Server (default: localhost:5500)
+<p style="margin-bottom: 4rem">Don't change any line of code to keep the software working!</p>
 
 # Streamer Information:
 
@@ -55,7 +66,7 @@ To make sure the Rocket League interface fits into the Overlay, you have to adju
 ## Stream Settings:
 1) Set the resolution to: 1920x1080
 2) Add a fullscreen Game Capture as the background layer
-3) Copy the route of the "index.html" in the overlay folder
-4) Add the route in form of a Browser Source as the front layer
+3) Add the overlay route in form of a Browser Source as the front layer (localhost:5500)
+4) Open Streamer-Overview in Browser at localhost:5500/
 
 **If the Overlay doesn't show any values, hide and show it again to refresh the html-page!**
