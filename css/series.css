@@ -10,14 +10,28 @@
     padding-right: 0.2rem;
 }
 
-.series>div {
-    position: absolute;
+.series>img {
+    padding-top: 0.05rem;
+}
+
+.series>p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    position: fixed;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    height: 1.75rem;
 }
 
 .blue-1 {
-    padding-right: 7rem;
+    padding-right: 6.9rem;
 }
 
 .orange-1 {
-    padding-left: 6.25rem;
+    padding-left: 6.3rem;
 }
