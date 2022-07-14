@@ -5,7 +5,7 @@
     height: 50rem;
     display: flex;
     justify-content: space-between;
-    padding-top: 10vh;
+    padding-top: 4vh;
     padding-left: 0.25vw;
     padding-right: 0.25vw;
 }
@@ -43,17 +43,16 @@
 
 .team-info-left,
 .team-info-right {
-    width: 40rem;
+    width: 25rem;
 }
 
 .team-info-left .player-row {
     background-image: url(../assets/blue_team_banner_top.png);
     background-repeat: no-repeat;
-    background-size: 30rem;
+    background-size: 25rem;
     background-position: bottom left;
     vertical-align: bottom;
-    height: 3rem;
-    padding-top: 0.5rem;
+    height: 2.7rem;
     padding-bottom: 2;
     font-size: 1.25rem !important;
 }
@@ -61,50 +60,52 @@
 .team-info-left .player-boost {
     background-image: url(../assets/blue_team_banner_bottom.png);
     background-repeat: no-repeat;
-    background-size: 30rem;
+    background-size: 25rem;
     background-position: top left;
-    height: 2.5rem;
-    padding-bottom: 0.5rem;
+    height: 2rem;
+    padding-bottom: 0.35rem
 }
 
 .team-info-left .name {
-    width: 12.5rem;
+    width: 10.5rem;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 0.75rem;
 }
 
 .team-info-left .goals {
-    width: 2.2rem;
+    width: 1.9rem;
     text-align: center;
-    padding-left: 2.3rem;
+    padding-left: 1.8rem;
 }
 
 .team-info-left .assists {
-    width: 2.1rem;
+    width: 1.8rem;
     text-align: center;
-    padding-left: 2rem;
+    padding-left: 1.6rem;
 }
 
 .team-info-left .saves {
-    width: 1.9rem;
+    width: 1.6rem;
     text-align: center;
-    padding-left: 1.5rem;
+    padding-left: 1.3rem;
 }
 
 .team-info-left .shots {
-    width: 1.9rem;
+    width: 1.65rem;
     text-align: center;
-    padding-left: 2rem;
+    padding-left: 1.6rem;
 }
 
 .team-info-left .boostValue {
-    width: 3.55rem;
+    width: 3rem;
     text-align: center;
-    padding-left: 0.5rem;
+    padding-top: 0.1rem;
+    padding-left: 0.4rem;
 }
 
 .team-info-left .boostBar {
-    width: 25.15rem;
+    width: 20.9rem;
+    padding-top: 0.01rem;
     padding-left: 0.2rem;
 }
 
@@ -118,20 +119,13 @@
     vertical-align: middle;
 }
 
-.team-info-right {
-    display: block;
-    justify-content: right;
-    padding-left: 10.5rem;
-}
-
 .team-info-right .player-row {
     background-image: url(../assets/orange_team_banner_top.png);
     background-repeat: no-repeat;
-    background-size: 30rem;
+    background-size: 25rem;
     background-position: bottom left;
     vertical-align: bottom;
-    height: 3rem;
-    padding-top: 0.5rem;
+    height: 2.7rem;
     padding-bottom: 2;
     font-size: 1.25rem !important;
 }
@@ -139,51 +133,51 @@
 .team-info-right .player-boost {
     background-image: url(../assets/orange_team_banner_bottom.png);
     background-repeat: no-repeat;
-    background-size: 30rem;
+    background-size: 25rem;
     background-position: top left;
-    height: 2.5rem;
-    padding-bottom: 0.5rem;
+    height: 2.05rem;
+    padding-bottom: 0.35rem;
 }
 
 .team-info-right .name {
-    width: 12.25rem;
+    width: 10.4rem;
     text-align: left;
-    padding-left: 1.25rem;
+    padding-left: 0.9rem;
 }
 
 .team-info-right .goals {
-    width: 2.2rem;
+    width: 1.875rem;
     text-align: center;
-    padding-left: 2.2rem;
+    padding-left: 1.75rem;
 }
 
 .team-info-right .assists {
-    width: 2.2rem;
+    width: 1.85rem;
     text-align: center;
-    padding-left: 1.9rem;
+    padding-left: 1.55rem;
 }
 
 .team-info-right .saves {
-    width: 1.9rem;
+    width: 1.575rem;
     text-align: center;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
 }
 
 .team-info-right .shots {
-    width: 1.85rem;
+    width: 1.6rem;
     text-align: center;
-    padding-left: 1.9rem;
+    padding-left: 1.625rem;
 }
 
 .team-info-right .boostValue {
-    width: 3.55rem;
+    width: 2.95rem;
     text-align: center;
-    padding-left: 0.7rem;
+    padding-left: 0.55rem;
 }
 
 .team-info-right .boostBar {
-    width: 24.8rem;
-    padding-left: 0.1rem
+    width: 20.625rem;
+    padding-left: 0.15rem
 }
 
 .team-info-right .progress-bar {
