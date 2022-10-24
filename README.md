@@ -14,10 +14,8 @@
 </ul>
 
 ## Download Overlay:
-1) Create a folder to save the files
-2) Open the Command Prompt (cmd)
-3) Navigate into the created folder (cd {route})
-4) Type: "git clone https://github.com/marcelnoehre/Overlay-3DRL.git"
+1) Open https://github.com/marcelnoehre/Overlay-3DRL/archive/refs/heads/master.zip in the browser
+2) Extract the .zip file and save it where you can find it again.
 <p style="margin-bottom: 2rem"></p>
 
 <p style="margin-bottom: 4rem">
