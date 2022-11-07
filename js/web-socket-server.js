@@ -282,6 +282,15 @@ const DisplayManager = {
         }
         $boostTarget.text(targetPlayer.boost);
         $speedTarget.text(targetPlayer.speed + " km/h");
+    },
+    toggleGameOverview: function(state) {
+        if(state) {
+            //TODO: calc stats
+            //TODO: show overview
+        } else {
+            //TODO: reset stats
+            //TODO: hide overview
+        }
     }
 };
 
@@ -313,6 +322,17 @@ $(() => {
     //event: replay ended
     WsSubscribers.subscribe("game", "replay_end", (d) => {
         matchRunning = true;
+    });
+
+    //event: podium started
+    WsSubscribers.subscribe("game", "podium_start", (d) => {
+        //TODO: check if ms fit game
+        setTimeout(DisplayManager.toggleGameOverview(true), 5000);
+    });
+
+    //event: match created
+    WsSubscribers.subscribe("game", "initialized", (d) => {
+        DisplayManager.toggleGameOverview(false);
     });
 
     //event: contionous update
