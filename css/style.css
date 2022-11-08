@@ -4,8 +4,14 @@
 @import "./scorebug.css";
 @import "./playerbug.css";
 @import "./boost.css";
+@import "./gamestats.css";
 
 /* general styles */
+
+:root {
+    --blue-team: #466fc3;
+    --orange-team: #e87520;
+}
 
 body {
     position: fixed;
@@ -22,6 +28,11 @@ tr {
 }
 
 td {
+    margin: 0;
+    padding: 0;
+}
+
+p {
     margin: 0;
     padding: 0;
 }
