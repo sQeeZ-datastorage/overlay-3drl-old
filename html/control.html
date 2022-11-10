@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 
 <head>
-    <meta name="description" content="Streamer Overlay - 3D-Gaming" />
+    <meta name="description" content="Streamer View - 3D-Gaming" />
     <meta charset="utf-8">
     <title>Streamer Overview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Marcel Nöhre">
-    <link rel="stylesheet" href="css/control.css">
+    <link rel="stylesheet" href="./../css/control.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="annonymous"></script>
-    <script src="./js/contol.js"></script>
+    <script src="./../js/contol.js"></script>
+    <script src="./../js/gamestats.js"></script>
 </head>
 
 <body>
     <section>
-        <p>Series</p>
+        <p>Spielstand</p>
         <div class="series-control">
             <div id="blue3" class="blue3 " onclick="toggleSeriesElement( 'blue-3') ">3</div>
             <div id="blue2" class="blue2" onclick="toggleSeriesElement('blue-2')">2</div>
@@ -23,7 +24,8 @@
             <div id="orange2" class="orange2" onclick="toggleSeriesElement('orange-2')">2</div>
             <div id="orange3" class="orange3 " onclick="toggleSeriesElement( 'orange-3') ">3</div>
         </div>
-        <button class="resetSeries" onclick="resetSeries()">Series zurücksetzen</button>
+        <button class="reset-series" onclick="resetSeries()">Spielstand zurücksetzen</button>
+        <button class="hide-game-stats" onclick="hideGameStats()">Spielübersicht schließen</button>
     </section>
 </body>
 

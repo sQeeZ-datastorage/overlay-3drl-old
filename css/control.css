@@ -37,12 +37,14 @@ p {
     text-align: center;
 }
 
-.resetSeries {
+.reset-series,
+.hide-game-stats {
     font-size: 3rem;
     background-color: red;
     color: white;
     border-color: white;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 2rem;
 }
 

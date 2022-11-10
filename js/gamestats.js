@@ -6,8 +6,12 @@ function showGameStats() {
     //TODO: Show Dialog
 }
 
-function resetGameStats() {
+function hideGameStats() {
     //TODO: hide Dialog
+}
+
+function resetGameStats() {
+    hideGameStats();
     ballposession = [0,0];
     boostConsumption = [0,0];
 }
