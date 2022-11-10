@@ -5,15 +5,16 @@
     height: 100vh;
     width: 100vw;
     background-color: #10101a;
+    font-size: 2rem;
 }
 
-.gamestats-left, 
+.gamestats-left,
 .gamestats-right {
     position: absolute;
     display: flex;
     top: 17.5vh;
-    width: 42.5vw;    
-    height: 62.5vh;
+    width: 42.5vw;
+    height: 52.5vh;
 }
 
 .gamestats-left {
@@ -24,20 +25,23 @@
     right: 2.5vh;
 }
 
-.gamestats-left>div>hr {
-    border-color: var(--blue-team);
+.gamestats-left>div>hr,
+.gamestats-team-left>hr {
+    border-color: var(--blue-team) !important;
 }
 
-.gamestats-right>div>hr {
-    border-color: var(--orange-team);
+.gamestats-right>div>hr,
+.gamestats-team-right>hr {
+    border-color: var(--orange-team) !important;
 }
 
 .gamestats-player {
-    height: 80vh;
+    height: 65vh;
     width: 33.33%;
 }
 
-.gamestats-player>hr {
+.gamestats-player>hr,
+.gamestats-overall>div>hr {
     border: 2px solid;
 }
 
@@ -55,8 +59,8 @@
     display: flex;
     flex-direction: column;
     left: 45vw;
-    top: calc(27.5vh - 6px);
-    width: 10vw;    
+    top: 28.25vh;
+    width: 10vw;
     height: 62.5vh;
 }
 
@@ -64,7 +68,6 @@
     height: 1.5vh;
     margin-top: 3vh;
     margin-bottom: 3vh;
-
 }
 
 .gamestats-comparison>progress {
@@ -73,12 +76,38 @@
 
 .gamestats-comparison>progress::-moz-progress-bar {
     background: lightcolor;
-  }
+}
 
 .gamestats-comparison>progress::-webkit-progress-value {
     background: var(--blue-team);
-  }
-  
+}
+
 .gamestats-comparison>progress::-webkit-progress-bar {
     background: var(--orange-team);
-  }
+}
+
+.gamestats-overall {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    height: 17.5vh;
+    width: 100vw;
+    color: white;
+}
+
+.gamestats-overall>div {
+    width: 15vw;
+    text-align: center;
+}
+
+.gamestats-overall>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4vh;
+}
+
+.gamestats-overall-description {
+    padding-top: 7.25vh;
+}
