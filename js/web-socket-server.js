@@ -285,10 +285,9 @@ const DisplayManager = {
     },
     toggleGameOverview: function(state) {
         if(state) {
-            //TODO: calc stats
             //TODO: show overview
         } else {
-            //TODO: reset stats
+            resetGameStats();
             //TODO: hide overview
         }
     }
