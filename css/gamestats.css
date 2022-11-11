@@ -6,6 +6,8 @@
     width: 100vw;
     background-color: #10101a;
     font-size: 2rem;
+    opacity: 0;
+    animation: appear 1s ease-in-out forwards;
 }
 
 .gamestats-left,
@@ -110,4 +112,13 @@
 
 .gamestats-overall-description {
     padding-top: 7.25vh;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
