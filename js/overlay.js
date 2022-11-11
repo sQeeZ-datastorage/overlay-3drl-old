@@ -1,4 +1,6 @@
-const constants = {
+import { showGameStats, resetGameStats, updateBallPosession, updateBoostConsumption } from "./gamestats.js";
+
+export const constants = {
     player: {
         name: 'name',
         goals: 'goals',
@@ -16,10 +18,10 @@ const constants = {
         orange: 'team-info-right'
     }
 };
-const scoreBoardTeam = ".scorebug .team";
+export const scoreBoardTeam = ".scorebug .team";
+export var matchRunning = true;
 const teamLeft = scoreBoardTeam + ".left";
 const teamRight = scoreBoardTeam + ".right";
-var matchRunning = true;
 var showBoost = false;
 var currentPlayers = [];
 var getValidId = function(playerId) {
@@ -28,7 +30,7 @@ var getValidId = function(playerId) {
 
 
 //Manager, for changing display infos
-const DisplayManager = {
+export const DisplayManager = {
     //remove player from scoreboard
     removePlayerInfo: function(player) {
         $("#" + player.id).remove();
@@ -170,12 +172,14 @@ const DisplayManager = {
         $boostTarget.text(targetPlayer.boost);
         $speedTarget.text(targetPlayer.speed + " km/h");
     },
+    updateMatchState: function(state) {
+        matchRunning = state;
+    },
     toggleGameOverview: function(state) {
         if(state) {
-            //TODO: show overview
+            showGameStats();
         } else {
             resetGameStats();
-            //TODO: hide overview
         }
     }
 };

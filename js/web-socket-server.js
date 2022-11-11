@@ -1,3 +1,5 @@
+import { constants, matchRunning, DisplayManager } from "./overlay.js";
+
 const WsSubscribers = {
     __subscribers: {},
     websocket: undefined,
@@ -118,28 +120,28 @@ $(() => {
 
     //event: match destroyed
     WsSubscribers.subscribe("game", "match_destroyed", (d) => {
-        matchRunning = true;
-        $(document.body).show();
+        DisplayManager.updateMatchState(true);
+        $("ingame-overlay").show();
     });
 
     //event: match ended
     WsSubscribers.subscribe("game", "match_ended", (d) => {
-        matchRunning = false;
+        DisplayManager.updateMatchState(false);
         $("." + constants.team.blue).empty();
         $("." + constants.team.orange).empty();
         DisplayManager.updateTargetInfo();
-        $(document.body).hide();
+        $("ingame-overlay").hide();
     });
 
     //event: replay startet
     WsSubscribers.subscribe("game", "replay_start", (d) => {
-        matchRunning = false;
+        DisplayManager.updateMatchState(false);
         DisplayManager.updateTargetInfo();
     });
 
     //event: replay ended
     WsSubscribers.subscribe("game", "replay_end", (d) => {
-        matchRunning = true;
+        DisplayManager.updateMatchState(true);
     });
 
     //event: podium started
