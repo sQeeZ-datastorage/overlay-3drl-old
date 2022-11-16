@@ -25,6 +25,6 @@ export function updateBallPosession(team) {
     } catch {}
 }
 
-export function updateBoostConsumption() {
-    //TODO: on update calc boost cinsumption per player
+export function updateBoostConsumption(team, boost) {
+    boostConsumption[team += boost];
 }

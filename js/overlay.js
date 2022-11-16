@@ -76,6 +76,9 @@ export const DisplayManager = {
     updatePlayerInfoBoost: function($playerInfoBoost, boostValue) {
         //update boost value
         var $boost = $playerInfoBoost.find(".boostValue");
+        if(boostValue < $boost.text()) {
+            updateBoostConsumption($playerInfoBoost.parent('.team-info-right').length, $boost.text()-boostValue);
+        } 
         $boost.text("" + boostValue);
 
         //update boost progress bar
