@@ -19,8 +19,10 @@ export function resetGameStats() {
     boostConsumption = [0,0];
 }
 
-export function updateBallPosession() {
-    //TODO: on update read team with ball, set team with ball ++
+export function updateBallPosession(team) {
+    try {
+        ballposession[team]++;
+    } catch {}
 }
 
 export function updateBoostConsumption() {

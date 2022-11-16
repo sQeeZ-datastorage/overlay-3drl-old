@@ -1,3 +1,4 @@
+import { updateBallPosession } from "./gamestats.js";
 import { constants, matchRunning, DisplayManager } from "./overlay.js";
 
 const WsSubscribers = {
@@ -163,6 +164,7 @@ $(() => {
         var target = d["game"].target;
         var players = d["game"].hasTarget ? Object.keys(d["players"]).map(k => d["players"][k]) : null;
         var targetPlayer = players != null ? players.find(player => player.id == target) : null;
+        updateBallPosession(d["game"]["ball"]["team"]);
         DisplayManager.updateTargetInfo(targetPlayer);
         DisplayManager.updateScoreBoard(d["game"]["teams"]);
         DisplayManager.loadPlayerInfos(d["players"]);
