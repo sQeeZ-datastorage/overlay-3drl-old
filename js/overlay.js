@@ -23,6 +23,7 @@ export var matchRunning = true;
 const teamLeft = scoreBoardTeam + ".left";
 const teamRight = scoreBoardTeam + ".right";
 var showBoost = false;
+var players = [];
 var currentPlayers = [];
 var getValidId = function(playerId) {
     return "player_" + playerId.replace(/\s/g, "");
@@ -127,7 +128,7 @@ export const DisplayManager = {
     },
     //load info of a player
     loadPlayerInfos: function(playersObject) {
-        var players = Object.keys(playersObject).map(function(k) {
+        players = Object.keys(playersObject).map(function(k) {
             var player = playersObject[k];
             const isBot = player.primaryID == '0';
             player.id = isBot ? player.name : getValidId(player.primaryID);
@@ -180,7 +181,7 @@ export const DisplayManager = {
     },
     toggleGameOverview: function(state) {
         if(state) {
-            showGameStats();
+            showGameStats(players, currentPlayers);
         } else {
             resetGameStats();
         }
