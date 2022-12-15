@@ -129,6 +129,8 @@
 
 .gamestats-overall-description {
     padding-top: 7.25vh;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 @keyframes appear {

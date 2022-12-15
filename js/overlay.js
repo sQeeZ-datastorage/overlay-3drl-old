@@ -1,4 +1,4 @@
-import { showGameStats, resetGameStats, updateBallPosession, updateBoostConsumption } from "./gamestats.js";
+import { showGameStats, resetGameStats, updateBoostConsumption } from "./gamestats.js";
 
 export const constants = {
     player: {
