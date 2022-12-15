@@ -1,5 +1,9 @@
 /* styles for the information at the top */
 
+.static-overlay {
+    position: relative;
+}
+
 .scorebug {
     padding: 0;
     margin: 0;

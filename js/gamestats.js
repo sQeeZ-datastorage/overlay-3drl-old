@@ -3,13 +3,13 @@ var boostConsumption = [0,0];
 
 
 function hideGameStats() {
-    $("#gamestats").empty(); 
+    $("postgame-overlay").hide();
 }
 
 export async function showGameStats() {
     //TODO: calculate values
     await new Promise(res => setTimeout(res, 4500));
-    $("#gamestats").load("./../html/gamestats.html"); 
+    $("postgame-overlay").show();
     displayTeamStats();
 }
 
