@@ -77,9 +77,9 @@ export const DisplayManager = {
     updatePlayerInfoBoost: function($playerInfoBoost, boostValue) {
         //update boost value
         var $boost = $playerInfoBoost.find(".boostValue");
-        if(boostValue < $boost.text()) {
-            updateBoostConsumption($playerInfoBoost.parent('.team-info-right').length, $boost.text()-boostValue);
-        } 
+        if (boostValue < $boost.text()) {
+            updateBoostConsumption($playerInfoBoost.parent('.team-info-right').length, $boost.text() - boostValue);
+        }
         $boost.text("" + boostValue);
 
         //update boost progress bar
@@ -179,8 +179,9 @@ export const DisplayManager = {
     updateMatchState: function(state) {
         matchRunning = state;
     },
+    //handle postgame overlay
     toggleGameOverview: function(state) {
-        if(state) {
+        if (state) {
             showGameStats(players, currentPlayers);
         } else {
             resetGameStats();

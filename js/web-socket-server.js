@@ -147,7 +147,6 @@ $(() => {
 
     //event: podium started
     WsSubscribers.subscribe("game", "podium_start", (d) => {
-        //TODO: check if ms fit game
         DisplayManager.toggleGameOverview(true);
     });
 

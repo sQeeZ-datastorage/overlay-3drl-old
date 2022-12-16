@@ -1,39 +1,30 @@
 /* styles for the player information */
 
 .playerbug {
-    width: 99.5vw;
-    height: 50rem;
     display: flex;
     justify-content: space-between;
+    width: 99.5vw;
+    height: 50rem;
     padding-top: 4vh;
     padding-left: 0.25vw;
     padding-right: 0.25vw;
 }
 
-.player-row>td {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    font-size: 1.25rem !important;
-    color: white;
-    font-weight: bold;
-}
-
+.player-row>td,
 .player-boost>td {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     font-size: 1.25rem !important;
-    color: white;
     font-weight: bold;
+    color: white;
 }
 
 .container {
+    text-align: center;
     height: 97.5%;
     width: 100%;
-    text-align: center;
 }
 
 .progress {
@@ -48,8 +39,8 @@
 
 .team-info-left .player-row {
     background-image: url(../assets/blue_team_banner_top.png);
-    background-repeat: no-repeat;
     background-size: 25rem;
+    background-repeat: no-repeat;
     background-position: bottom left;
     vertical-align: bottom;
     height: 2.7rem;
@@ -59,46 +50,46 @@
 
 .team-info-left .player-boost {
     background-image: url(../assets/blue_team_banner_bottom.png);
-    background-repeat: no-repeat;
     background-size: 25rem;
+    background-repeat: no-repeat;
     background-position: top left;
     height: 2rem;
     padding-bottom: 0.35rem
 }
 
 .team-info-left .name {
-    width: 10.5rem;
     text-align: left;
+    width: 10.5rem;
     padding-left: 0.75rem;
 }
 
 .team-info-left .goals {
-    width: 1.9rem;
     text-align: center;
+    width: 1.9rem;
     padding-left: 1.8rem;
 }
 
 .team-info-left .assists {
-    width: 1.8rem;
     text-align: center;
+    width: 1.8rem;
     padding-left: 1.6rem;
 }
 
 .team-info-left .saves {
-    width: 1.6rem;
     text-align: center;
+    width: 1.6rem;
     padding-left: 1.3rem;
 }
 
 .team-info-left .shots {
-    width: 1.65rem;
     text-align: center;
+    width: 1.65rem;
     padding-left: 1.6rem;
 }
 
 .team-info-left .boostValue {
-    width: 3rem;
     text-align: center;
+    width: 3rem;
     padding-top: 0.1rem;
     padding-left: 0.4rem;
 }
@@ -110,19 +101,19 @@
 }
 
 .team-info-left .progress-bar {
-    margin-top: 5%;
+    vertical-align: middle;
     height: 90%;
     width: 100%;
+    margin-top: 5%;
     background-color: #ee303c;
     transition: 0.1s linear;
     transition-property: background-color;
-    vertical-align: middle;
 }
 
 .team-info-right .player-row {
     background-image: url(../assets/orange_team_banner_top.png);
-    background-repeat: no-repeat;
     background-size: 25rem;
+    background-repeat: no-repeat;
     background-position: bottom left;
     vertical-align: bottom;
     height: 2.7rem;
@@ -132,46 +123,46 @@
 
 .team-info-right .player-boost {
     background-image: url(../assets/orange_team_banner_bottom.png);
-    background-repeat: no-repeat;
     background-size: 25rem;
+    background-repeat: no-repeat;
     background-position: top left;
     height: 2.05rem;
     padding-bottom: 0.35rem;
 }
 
 .team-info-right .name {
-    width: 10.4rem;
     text-align: left;
+    width: 10.4rem;
     padding-left: 0.9rem;
 }
 
 .team-info-right .goals {
-    width: 1.875rem;
     text-align: center;
+    width: 1.875rem;
     padding-left: 1.75rem;
 }
 
 .team-info-right .assists {
-    width: 1.85rem;
     text-align: center;
+    width: 1.85rem;
     padding-left: 1.55rem;
 }
 
 .team-info-right .saves {
-    width: 1.575rem;
     text-align: center;
+    width: 1.575rem;
     padding-left: 1.2rem;
 }
 
 .team-info-right .shots {
-    width: 1.6rem;
     text-align: center;
+    width: 1.6rem;
     padding-left: 1.625rem;
 }
 
 .team-info-right .boostValue {
-    width: 2.95rem;
     text-align: center;
+    width: 2.95rem;
     padding-left: 0.55rem;
 }
 
@@ -181,23 +172,23 @@
 }
 
 .team-info-right .progress-bar {
+    vertical-align: middle;
     height: 90%;
     width: 100%;
     background-color: #ee303c;
     transition: 0.1s linear;
     transition-property: background-color;
-    vertical-align: middle;
 }
 
 .progress-striped .progress-bar {
+    height: 90%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.65%;
     background-color: #FCBC51;
     background-image: linear-gradient( 45deg, rgb(252, 163, 17) 25%, transparent 25%, transparent 50%, rgb(252, 163, 17) 50%, rgb(252, 163, 17) 75%, transparent 75%, transparent);
     animation: progressAnimationStrike 0.1s;
-    margin: 0;
-    padding: 0;
-    margin-top: 0.65%;
-    height: 90%;
-    width: 100%;
 }
 
 @keyframes progressAnimationStrike {

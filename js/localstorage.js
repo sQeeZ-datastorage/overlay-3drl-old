@@ -1,3 +1,4 @@
+//handle series
 window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('blue-1').style.visibility = localStorage.getItem('blue-1') == 'true' ? 'visible' : 'hidden';
     document.getElementById('blue-2').style.visibility = localStorage.getItem('blue-2') == 'true' ? 'visible' : 'hidden';

@@ -1,12 +1,12 @@
 /* styles for the boost overlay */
 
 .targetDisplay {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url(../assets/boost_overlay.png);
     background-repeat: no-repeat;
-    background-size: 12.35rem;
     background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
+    background-size: 12.35rem;
     bottom: 0;
     right: 0;
     padding: 2.75rem;
@@ -16,18 +16,18 @@
 }
 
 .boostTarget {
-    font-size: 3rem;
-    font-weight: bold;
     display: flex;
     justify-content: space-around;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .speedTarget {
-    width: 10rem;
-    margin-top: 1rem;
-    font-size: 2rem;
     display: flex;
     justify-content: space-around;
     align-self: center;
     white-space: nowrap;
+    width: 10rem;
+    margin-top: 1rem;
+    font-size: 2rem;
 }

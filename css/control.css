@@ -1,18 +1,20 @@
+/* styles for streamers view */
+
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #1C1C1C;
-    color: white;
-    font-size: 5rem;
-    font-weight: bolder;
     padding: 0;
     margin: 0;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: white;
+    background-color: #1C1C1C;
 }
 
 section {
-    width: 100vw;
     display: grid;
     justify-content: center;
+    width: 100vw;
 }
 
 p {
@@ -22,30 +24,30 @@ p {
 }
 
 .series-control {
-    width: 100vw;
-    height: 20vh;
     display: flex;
     justify-content: space-around;
+    width: 100vw;
+    height: 20vh;
 }
 
 .series-control>div {
-    height: 100%;
-    width: 14%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    height: 100%;
+    width: 14%;
 }
 
 .reset-series,
 .hide-game-stats {
-    font-size: 3rem;
-    background-color: red;
-    color: white;
-    border-color: white;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem;
+    font-size: 3rem;
+    color: white;
+    border-color: white;
+    background-color: red;
 }
 
 .selected-blue {
