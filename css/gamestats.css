@@ -17,6 +17,7 @@
     top: 16.25vh;
     width: 42.5vw;
     height: 52.5vh;
+    font-size: 2rem;
 }
 
 .gamestats-left {
@@ -113,6 +114,7 @@
     height: 17.5vh;
     width: 100vw;
     color: white;
+    font-size: 2rem;
 }
 
 .gamestats-overall>div {
@@ -130,7 +132,7 @@
 .gamestats-overall-description {
     padding-top: 7.25vh;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
 }
 
 @keyframes appear {
