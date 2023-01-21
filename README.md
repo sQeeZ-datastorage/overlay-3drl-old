@@ -1,6 +1,10 @@
 # Rocket League Overlay 3D-Gaming
 <p style="margin-top: 0; margin-bottom: 2rem">Rocket League Overlay commissioned by 3D-Gaming</p>
 
+<video style="margin-bottom: 2rem" controls>
+  <source src="assets/3dg-overlay-preview.mp4" type="video/mp4">
+</video>
+
 # Setup:
 
 ## Must be installed:
